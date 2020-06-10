@@ -1,6 +1,7 @@
  {
   "*.js": [
     "standard --fix ",
+    "npm run teststaged",
     "git add"
   ]
  }
