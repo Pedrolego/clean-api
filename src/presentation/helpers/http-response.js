@@ -1,5 +1,5 @@
 const UnauthorizedError = require('./unauthorized-error')
-const ServerError = require('../helpers/server-error')
+const ServerError = require('./server-error')
 
 module.exports = class HttpResponse {
   static badRequest (error) {
@@ -13,7 +13,6 @@ module.exports = class HttpResponse {
     return {
       statusCode: 500,
       body: new ServerError()
-
     }
   }
 
