@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch --noStackTrace",
-    "teststaged": "jest --passWithNoTests --FindRelatedTests --silent",
-    "test:ci": "jest --coverage"
+    "teststaged": "jest --passWithNoTests --FindRelatedTests --silent --noStackTrace",
+    "test:ci": "jest --coverage --noStackTrace --silent"
   },
 
   "standard": {
