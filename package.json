@@ -4,8 +4,8 @@
   "description": "clean-architectureapi",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
-    "teststaged": "jest --passWithNoTests"
+    "test": "jest --watch --noStackTrace",
+    "teststaged": "jest --passWithNoTests --FindRelatedTests --silent"
   },
 
   "standard": {
