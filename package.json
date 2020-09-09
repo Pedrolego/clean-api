@@ -4,22 +4,21 @@
   "description": "clean-architectureapi",
   "main": "index.js",
   "scripts": {
-    "test": "jest --silent --noStackTrace --passWithNoTests" ,
-    "test:unit" :"npm test -- --watch -c jest-unit-config.js",
+    "test": "jest --silent --noStackTrace --passWithNoTests",
+    "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
     "test:staged": "npm test -- --findRelatedTests ",
     "test:ci": "npm test  -- --coverage "
   },
-
   "standard": {
-    "env": ["jest"]
+    "env": [
+      "jest"
+    ]
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pedrolego/clean-api.git"
   },
-  
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -31,5 +30,8 @@
     "jest": "^26.0.1",
     "lint-staged": "^10.2.0",
     "standard": "^14.3.3"
+  },
+  "dependencies": {
+    "validator": "^13.1.1"
   }
 }

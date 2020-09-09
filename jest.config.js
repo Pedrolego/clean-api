@@ -7,6 +7,6 @@ module.exports = {
 
   testEnvironment: 'node',
 
-  collectCovrageFrom: ['**/src/**/*.js']
+  collectCoverageFrom: ['**/src/**/*.js']
 
 }
