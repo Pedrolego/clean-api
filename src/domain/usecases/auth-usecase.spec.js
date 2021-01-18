@@ -156,7 +156,7 @@ describe('Auth UseCase', () => {
     expect(tokenGeneratorSpy.userId).toBe(loadUserByEmailRepositorySpy.user.id)
   })
 
-  test('Should call UpdateAccessTokenRepository  with correct values ', async () => {
+  test('Should call UpdateAccessTokenRepository with correct values ', async () => {
     const { sut, loadUserByEmailRepositorySpy, updateAccessTokenRepositorySpy, tokenGeneratorSpy } = makeSut()
     await sut.auth('valid_email@mail.com', 'valid_password')
 
